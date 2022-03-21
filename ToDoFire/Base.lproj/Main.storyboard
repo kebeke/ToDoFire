@@ -1,24 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ToDoFire" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="MAe-b1-fhr">
+                                <rect key="frame" x="40" y="266" width="334" height="374"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="JFw-qw-YiL">
+                                        <rect key="frame" x="83" y="0.0" width="168.5" height="108.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDoFire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p80-Sj-NAK">
+                                                <rect key="frame" x="6" y="0.0" width="156.5" height="44.5"/>
+                                                <color key="tintColor" red="0.94333755969999999" green="0.92685581230000003" blue="0.90226877350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="40"/>
+                                                <color key="textColor" red="0.94333755969999999" green="0.92685581230000003" blue="0.90226877350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="highlightedColor" red="0.94333755969999999" green="0.92685581230000003" blue="0.90226877350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User does not exist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDe-j2-a5d">
+                                                <rect key="frame" x="0.0" y="84.5" width="168.5" height="24"/>
+                                                <color key="tintColor" red="0.94333755969999999" green="0.92685581230000003" blue="0.90226877350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" systemColor="systemPinkColor"/>
+                                                <color key="highlightedColor" red="0.94333755969999999" green="0.92685581230000003" blue="0.90226877350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="L6u-kx-nI6">
+                                        <rect key="frame" x="0.0" y="158.5" width="334" height="78"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kzj-28-130">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="34"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="0.0"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YQQ-6R-7xO">
+                                                <rect key="frame" x="0.0" y="44" width="334" height="34"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="0.0"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="YQQ-6R-7xO" secondAttribute="trailing" id="1hr-O0-1o2"/>
+                                            <constraint firstAttribute="trailing" secondItem="Kzj-28-130" secondAttribute="trailing" id="J7y-na-YrY"/>
+                                            <constraint firstItem="YQQ-6R-7xO" firstAttribute="leading" secondItem="L6u-kx-nI6" secondAttribute="leading" id="hMC-FU-ZWD"/>
+                                            <constraint firstItem="Kzj-28-130" firstAttribute="leading" secondItem="L6u-kx-nI6" secondAttribute="leading" id="lrR-TC-UPK"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UHd-sZ-SfV">
+                                        <rect key="frame" x="40" y="286.5" width="254" height="87.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tj-HH-sZC">
+                                                <rect key="frame" x="0.0" y="0.0" width="254" height="36.5"/>
+                                                <color key="backgroundColor" white="1" alpha="0.40529283940397354" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Login">
+                                                    <fontDescription key="titleFontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="20"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egu-ei-bo7">
+                                                <rect key="frame" x="0.0" y="56.5" width="254" height="31"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Register">
+                                                    <fontDescription key="titleFontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="15"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="2tj-HH-sZC" secondAttribute="trailing" id="Lg0-rw-p7y"/>
+                                            <constraint firstItem="Egu-ei-bo7" firstAttribute="leading" secondItem="UHd-sZ-SfV" secondAttribute="leading" id="bCG-f1-Tgn"/>
+                                            <constraint firstItem="2tj-HH-sZC" firstAttribute="leading" secondItem="UHd-sZ-SfV" secondAttribute="leading" id="pcU-Fq-eYO"/>
+                                            <constraint firstAttribute="trailing" secondItem="Egu-ei-bo7" secondAttribute="trailing" id="rND-SN-wf8"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="L6u-kx-nI6" secondAttribute="trailing" id="GBB-Co-yin"/>
+                                    <constraint firstAttribute="trailing" secondItem="UHd-sZ-SfV" secondAttribute="trailing" constant="40" id="KlL-9h-T1x"/>
+                                    <constraint firstItem="UHd-sZ-SfV" firstAttribute="leading" secondItem="MAe-b1-fhr" secondAttribute="leading" constant="40" id="bEE-wZ-HIE"/>
+                                    <constraint firstItem="L6u-kx-nI6" firstAttribute="leading" secondItem="MAe-b1-fhr" secondAttribute="leading" id="uly-ai-AtN"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.43309908393727403" green="0.44126943302050275" blue="0.86087566614151001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="MAe-b1-fhr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1IW-hD-YWm"/>
+                            <constraint firstItem="MAe-b1-fhr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5i1-Vf-aIS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MAe-b1-fhr" secondAttribute="trailing" constant="40" id="NWB-Hq-4pr"/>
+                            <constraint firstItem="MAe-b1-fhr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="YfK-ga-cyG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="20" y="80"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
