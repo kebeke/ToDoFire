@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E01CEDA627E9CD33001BBD2E /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01CEDA527E9CD33001BBD2E /* TasksViewController.swift */; };
 		E074402727E8ED6200030F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E074402627E8ED6200030F39 /* AppDelegate.swift */; };
 		E074402927E8ED6200030F39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E074402827E8ED6200030F39 /* SceneDelegate.swift */; };
 		E074402B27E8ED6200030F39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E074402A27E8ED6200030F39 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E01CEDA527E9CD33001BBD2E /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		E074402327E8ED6200030F39 /* ToDoFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E074402627E8ED6200030F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E074402827E8ED6200030F39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				E074402627E8ED6200030F39 /* AppDelegate.swift */,
+				E01CEDA527E9CD33001BBD2E /* TasksViewController.swift */,
 				E074402827E8ED6200030F39 /* SceneDelegate.swift */,
 				E074402A27E8ED6200030F39 /* ViewController.swift */,
 				E074402C27E8ED6200030F39 /* Main.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E074402B27E8ED6200030F39 /* ViewController.swift in Sources */,
+				E01CEDA627E9CD33001BBD2E /* TasksViewController.swift in Sources */,
 				E074402727E8ED6200030F39 /* AppDelegate.swift in Sources */,
 				E074402927E8ED6200030F39 /* SceneDelegate.swift in Sources */,
 			);
